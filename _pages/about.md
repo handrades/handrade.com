@@ -2,19 +2,24 @@
 layout: page
 title: About
 permalink: /about/
-image: '/assets/img/01.jpg'
+image: '/assets/img/me.png'
 ---
 
-Hi, my name is Derrick Wells. I like being at the center of events, being free and enjoying every moment. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies.
+Hello! My name is Héctor Andrade. I am a problem solver that enjoys writting code in PowerShell. I like working with end users, understand their problems to propose simple solutions to streamline their daily tasks.
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity.
+My proposals are a mix of the following technologies but not limited to:
 
-***
+* Windows Server
+* PowerShell
+* LAN Network
+* Power BI
+* Azure DevOps
+* SQL
 
-> Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+I use PowerShell as a glue to put things together. I usually use PowerShell to retrieve data from **anywhere**, store it if necessary and finally display the information with a bit of analytics.
 
-***
+I enjoy working with:
 
-Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
-
-Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+* PowerShell
+* Power BI
+* Azure DevOps
