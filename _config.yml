@@ -1,7 +1,7 @@
 title: Héctor Andrade – Problem Solver
 logo:  # you can add own logo.
 description: Passionate scripter, I like to make complex problems simple solutions.
-baseurl: "/handrade.com" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://handrade.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
