@@ -2,7 +2,7 @@
 layout: post
 title:  Deploy to Azure Using Azure DevOps
 date:   2020-03-06 11:40:24 -0500
-image:  '/assets/img/Azure-DevOps.jpg'
+image:  '/assets/img/Azure-DevOps.png'
 tags:   [Azure DevOps, ARM, blog]
 ---
 
