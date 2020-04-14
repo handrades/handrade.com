@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: '/assets/img/me.png'
+image: '/assets/img/AboutMe.png'
 ---
 
 Hello! My name is Héctor Andrade. I am a problem solver that enjoys writting code in PowerShell. I like working with end users, understand their problems to propose simple solutions to streamline their daily tasks.
