@@ -57,7 +57,7 @@ There is obviously more than just getting, filtering and displaying the data but
 
 ## Pipeline
 
-This is what allows PowerShell to pass the objects from one cmdlet to the other. It is represented with the pipe character "|". The following is an oversimplified example of how we can use the pipeline workflow using get, filter and displaying:
+This is what allows PowerShell to pass the objects from one cmdlet to the other. It is represented with the pipe character. The following is an oversimplified example of how we can use the pipeline workflow using get, filter and displaying:
 
 ``` PowerShell
 
@@ -112,7 +112,7 @@ As you can see, we can retrieve data from devices that are not even SysAdmin rel
 
 ### Excel
 
-So let's work with the first 3 bolded items from the list above, but before we begin one thing you need to know is that by default PowerShell is not able to retrieve all data. This is why there are modules, which you can look at them as applications that you install on your operating system. Where the application is the module and the operating system is PowerShell. So every time you install a new module, you are making PowerShell even more useful.
+So let's work with the first 3 bolded items from the list above, but before we begin one thing you need to know is that by default PowerShell is not able to retrieve all data. This is why there are modules, which you can look at them as applications that you install on your operating system. Where the application is the module and the operating system is PowerShell. So every time you install a new module, you are making PowerShell even more powerful.
 
 Copy the table below and paste it in a blank excel worksheet, save it on your Downloads folder and name it SampleData.xlsx. This way we have something to work on.
 
@@ -228,7 +228,7 @@ Total     : 63.68
   * Is the file path to the excel file
   * ~ is the equivalent to my home directory, in my case C:\Users\Hector.
 
-PowerShell should now display the excel file in an not easy to use format. But thats ok, we are currently not worried about how the data looks but that we are able to retrieve the data. As we are currently just retrieving data.
+PowerShell should now display the excel file in an not easy to use format. But thats ok, we are currently not worried about how the data looks but that we are able to retrieve the data. As we are currently just getting our feet wet on how to retrieve some data.
 
 ### API
 
@@ -279,11 +279,11 @@ Once again the data output is not the best, but that's ok we are not really conc
 
 ### PLC
 
-PLC stands for programmable logic controller. PLCs are use pretty much by all the manufacturing businesses. They are used to automate their manufacturing processes. These are the devices that control all the edge devices inside presses, ovens, conveyors, WaterJets, mills, etc. Like the motors, sensors, cameras, etc. They are indispensable in a manufacturing business.
+PLC stands for programmable logic controller. PLCs are use pretty much by all the manufacturing businesses. They are used to automate their manufacturing processes. PLCs control all the edge devices inside presses, ovens, conveyors, WaterJets, mills, etc. Like the motors, sensors, cameras, etc. They are indispensable in a manufacturing business.
 
-There are many PLC manufacturers. I created a PowerShell module that retrieves data from [Rockwell Allen-Bradley](https://ab.rockwellautomation.com/Programmable-Controllers) PLCs using [InGear Drivers](https://ingeardrivers.com/products/net-products/netlogix/). There other PLC brands that you probably have heard of such as Siemens, Schneider Electric, ABB, Honeywell, Fanuc, etc. Some projects out in the wild that have managed to make arduinos and Raspberry PIs PLCs too.
+There are many PLC manufacturers. I created a PowerShell module that retrieves data from [Rockwell Allen-Bradley](https://ab.rockwellautomation.com/Programmable-Controllers) PLCs using [InGear Drivers](https://ingeardrivers.com/products/net-products/netlogix/). There are other PLC brands that you probably have heard of such as Siemens, Schneider Electric, ABB, Honeywell, Fanuc, etc. Some projects out in the wild that have managed to make arduinos and Raspberry PIs PLCs too.
 
-So, let's see how I retrieve PLC information. First I connect to the PLC using __Connect-PLC__. After that I create a tag which in the programing world would be the equivalent of a variable using __New-Tag__. Next I read the tag which contains all the data. Finally I disconnect from the PLC.
+So, let's see how I retrieve PLC information. First I connect to the PLC using __Connect-PLC__. After that I create a tag which in the programing world would be the equivalent of a variable using __New-Tag__. Next I read the tag which contains all the data using __Read-Tag__. Finally I disconnect from the PLC using __Disconnect-PLC__.
 
 ```PowerShell
 $PLC = Connect-PLC -IPAddress 172.16.1.11 -CPUType 'LOGIX'
@@ -309,13 +309,15 @@ NetType       : System.Int32
 Disconnect-PLC -Controller $PLC
 ```
 
-This is obviously this was a little more elaborate, but we achieved the end result which was a way to retrieve data from an Rockwell Allen-Bradley PLC. The reason why I included this example was to show you that you can even develop your own PowerShell modules using third party DLLs. PowerShell is not __only for system administrators__ remember!
+Obviously this was a little more elaborate, but we achieved the end result which was a way to retrieve data from a Rockwell Allen-Bradley PLC. The reason why I included this example was to show you that you can even develop your own PowerShell modules using third party DLLs. PowerShell is not __only for system administrators__ remember!
 
 ### Recap
 
 So far we have talked about one of the three pipeline workflows. Which is how to retrieve the data from somewhere. It really doesn't matter where the data lives, as longest we know where it is stored. There are high chances to find a PowerShell way to retrieve it.
 
-__Gets Data__ | Filters Data | Displays Data
+```PowerShell
+**GETS DATA** | Filters Data | Displays Data
+```
 
 ## Filtering Data
 
