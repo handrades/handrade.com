@@ -2,7 +2,7 @@
 layout: post
 title:  PowerShell for Non System Administrators
 date:   2020-04-13 21:07:15 -0500
-image:  '/assets/img/PowerShell-Logo.png'
+image:  '/assets/img/PowerShell.png'
 tags:   [PowerShell, blog]
 ---
 
